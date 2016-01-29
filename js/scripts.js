@@ -18,9 +18,8 @@ Pizza.prototype.pizzaPrice = function () {
     var diameterPrice = (price + 1);
 
   } else {
-    diameterPrice = price;
+    var diameterPrice = price;
   };
-
 
   if(this.toppingVeg === "four-veg"){
     var toppingVegPrice = (diameterPrice + 1.5);
@@ -29,12 +28,11 @@ Pizza.prototype.pizzaPrice = function () {
     var toppingVegPrice = (diameterPrice + 1);
 
   } else if (this.toppingVeg === "two-veg"){
-    var toppingVegPrice = (diameterPrice + .5);
+    var toppingVegPrice = (diameterPrice + 0.5);
 
   } else {
     var toppingVegPrice = diameterPrice;
   };
-
 
   if(this.toppingMeat === "four-meat"){
     var toppingMeatPrice = (toppingVegPrice + 2.25);
@@ -43,7 +41,7 @@ Pizza.prototype.pizzaPrice = function () {
     var toppingMeatPrice = (toppingVegPrice + 1.5);
 
   } else if (this.toppingMeat === "two-meat"){
-    var toppingMeatPrice = (toppingVegPrice + .75);
+    var toppingMeatPrice = (toppingVegPrice + 0.75);
 
   } else {
     var toppingMeatPrice = toppingVegPrice;
