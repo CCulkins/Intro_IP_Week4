@@ -19,30 +19,3 @@ describe("Pizza", function(){
     expect(testPizza.pizzaPrice()).to.equal(9);
   });
 });
-
-
-// NOTES:
-
-// amount
-// one
-// two
-// three
-// four
-//
-// diameter
-// size-ten -$6
-// size-twelve -$7
-// size-fourteen -$8
-//
-// toppingVeg (first free)
-// olives (+ $.50)
-// pineapple (+ $.50)
-// peppers (+ $.50)
-// onions (+ $.50)
-//
-// toppingMeat (first free)
-// pepperoni (+ $1)
-// sausage (+ $1)
-// chicken (+ $1)
-// canadian bacon (+ $1)
-//
