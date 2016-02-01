@@ -10,134 +10,128 @@
   <body>
     <div class="container">
 <!-- Jumbotron-->
-<div class="jumbotron">
-  <h1>Pizza Palace</h1>
-  <p class="text-danger">Welcome to Pizza Palace! Click below to start the pizza making process!</p>
-
-</div>
+      <div class="jumbotron">
+        <h1>Pizza Palace</h1>
+        <p class="text-danger">Welcome to Pizza Palace! Click below to start the pizza making process!</p>
+      </div>
 <!-- End of Jumbotron-->
 <!-- Start of Bootstrap form -->
-<form class="form-horizontal" id=form>
-  <fieldset>
-    <legend>Create your pizza here!</legend>
+      <form class="form-horizontal" id=form>
+        <fieldset>
+          <legend>Create your pizza here!</legend>
 <!-- Panel -->
-    <div class="panel panel-danger">
-      <div class="panel-heading">
-        <h3 class="panel-title">Pricing info</h3>
-      </div>
-      <div class="panel-body">
-        Small pizza - (10") - $6 || Medium pizza - (12") - $7 || Large pizza - (12") - $8
-        <br>
-         Extra veggie topping $.50 || Extra meat topping $1 || First veggie and meat topping are free!
-      </div>
-    </div>
+          <div class="panel panel-danger">
+            <div class="panel-heading">
+              <h3 class="panel-title">Pricing info</h3>
+          </div>
+          <div class="panel-body">
+            Small pizza - (10") - $6 || Medium pizza - (12") - $7 || Large pizza - (12") - $8
+            <br>
+            Extra veggie topping $.50 || Extra meat topping $1 || First veggie and meat topping are free!
+          </div>
+          </div>
 <!-- End of Panel -->
-<!-- Beggining of form -->
-<div class="col-lg-10">
-    <div class="form-group">
-      <label for="selectAmount" class="col-lg-2 control-label">How many pizzas?</label>
-      <div class="col-lg-10">
-        <select class="form-control" id="select-amount">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-        <br>
-        <label for="selectSize">Choose your size</label>
-        <br>
-        <select id="select-size" multiple="" class="form-control">
-          <option value="small">Small - (10 inches)</option>
-          <option value="medium">Medium - (12 inches)</option>
-          <option value="large">Large - (14 inches)</option>
-        </select>
-      </div>
-    </div>
-  </div>
+          <div class="col-lg-10">
+            <div class="form-group">
+              <label for="selectAmount" class="col-lg-2 control-label">How many pizzas?</label>
+              <div class="col-lg-10">
+                <select class="form-control" id="select-amount">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                <br>
+                <label for="selectSize">Choose your size</label>
+                <br>
+                <select id="select-size" multiple="" class="form-control">
+                  <option value="small">Small - (10 inches)</option>
+                  <option value="medium">Medium - (12 inches)</option>
+                  <option value="large">Large - (14 inches)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        <div id ="form" class="col-lg-10">
+          <div class="form-group">
+            <label for="selectVeg" class="col-lg-2 control-label">How many veggies?</label>
+            <div class="col-lg-10">
+              <select class="form-control" id="select-veg">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+              <br>
+              <label for="pickVeg">Choose your veggie toppings</label>
+              <br>
+              <select multiple="" class="form-control" id="pick-veg">
+                <option value="pineapple">Pineapple</option>
+                <option value="olives">Olives</option>
+                <option value="peppers">Peppers</option>
+                <option value="onions">Onions</option>
+              </select>
+            </div>
+          </div>
 
-<!-- Beggining of form -->
+          <div class="form-group">
+            <label for="selectMeat" class="col-lg-2 control-label">How many meat toppings?</label>
+            <div class="col-lg-10">
+              <select class="form-control" id="select-meat">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+              <br>
+              <label for="pickMeat">Choose your meat toppings</label>
+              <br>
+              <select multiple="" class="form-control" id="pick-meat">
+                <option value="pepperoni">Pepperoni</option>
+                <option value="sausage">Sausage</option>
+                <option value="canadian-bacon">Canadian Bacon</option>
+                <option value="chicken">Chicken</option>
+              </select>
+            </div>
+          </div>
 
-<div id ="form" class="col-lg-10">
-
-      <div class="form-group">
-      <label for="selectVeg" class="col-lg-2 control-label">How many veggies?</label>
-      <div class="col-lg-10">
-        <select class="form-control" id="select-veg">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-        <br>
-        <label for="pickVeg">Choose your veggie toppings</label>
-        <br>
-        <select multiple="" class="form-control" id="pick-veg">
-          <option value="pineapple">Pineapple</option>
-          <option value="olives">Olives</option>
-          <option value="peppers">Peppers</option>
-          <option value="onions">Onions</option>
-        </select>
-      </div>
-    </div>
-
-    <div class="form-group">
-
-      <label for="selectMeat" class="col-lg-2 control-label">How many meat toppings?</label>
-      <div class="col-lg-10">
-        <select class="form-control" id="select-meat">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-        <br>
-        <label for="pickMeat">Choose your meat toppings</label>
-        <br>
-        <select multiple="" class="form-control" id="pick-meat">
-          <option value="pepperoni">Pepperoni</option>
-          <option value="sausage">Sausage</option>
-          <option value="canadian-bacon">Canadian Bacon</option>
-          <option value="chicken">Chicken</option>
-        </select>
-      </div>
-    </div>
     <!-- Start of text box -->
-    <div class="form-group">
-      <label for="textArea" class="col-lg-2 control-label">Anything else?</label>
-      <div class="col-lg-10">
-        <textarea class="form-control" rows="3" id="textArea"></textarea>
-      </div>
-    </div>
-
+          <div class="form-group">
+            <label for="textArea" class="col-lg-2 control-label">Anything else?</label>
+            <div class="col-lg-10">
+              <textarea class="form-control" rows="3" id="textArea"></textarea>
+            </div>
+          </div>
     <!-- End of text box -->
 
-    <div class="form-group">
-      <div class="col-lg-10 col-lg-offset-2">
-        <button type="reset" class="btn btn-default">Cancel</button>
-        <button type="submit" class="btn btn-danger" id="create-pizza">Submit</button>
-      </div>
-    </div>
-  </fieldset>
-</form>
-</div>
-<!-- End of form -->
-<div class="col-md-6">
-          <div id="pizzaSummary">
-            <h2>Your order:</h2>
-
-            <p>Amount: <span id="final-amount"></span></p>
-            <p>Size: <span id="final-size"></span></p>
-            <p>Number of veggie toppings: <span id="final-veg"></span></p>
-            <p>Veggie toppings: <span id="final-veg-choice"></span></p>
-            <p>Number of meat toppings: <span id="final-meat"></span></p>
-            <p>Meat toppings: <span id="final-meat-choice"></span></p>
-
-            <ul id="pizzaSummary">
-
-            </ul>
+          <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+              <button type="reset" class="btn btn-default">Cancel</button>
+              <button type="submit" class="btn btn-danger" id="create-pizza">Submit</button>
+            </div>
           </div>
+        </fieldset>
+      </form>
+      </div>
+<!-- End of form -->
+
+      <div class="col-md-6">
+        <div id="pizzaSummary">
+          <h2>Your order:</h2>
+
+          <p>Amount: <span id="final-amount"></span></p>
+          <p>Size: <span id="final-size"></span></p>
+          <p>Number of veggie toppings: <span id="final-veg"></span></p>
+          <p>Veggie toppings: <span id="final-veg-choice"></span></p>
+          <p>Number of meat toppings: <span id="final-meat"></span></p>
+          <p>Meat toppings: <span id="final-meat-choice"></span></p>
+
+          <ul id="pizzaSummary">
+
+          </ul>
         </div>
+      </div>
     </div>
   </body>
 </html>

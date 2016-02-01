@@ -44,8 +44,6 @@ Pizza.prototype.pizzaPrice = function () {
 
 $(document).ready(function() {
 
-  // $("#create-button").click(function() {
-  // });
   $("form#form").submit(function(event) {
 
     var selectedAmount= $("select#select-amount").val();
@@ -62,43 +60,15 @@ $(document).ready(function() {
     $("span#final-meat").text(selectedMeatNum);
     $("span#final-meat-choice").text(selectedMeat);
 
-      $("#pizzaSummary").show();
-      var selectedAmount= $(this).find("select#select-amount").val();
-      var selectedSize = $(this).find("select#select-size").val();
-      var selectedVegNum = $(this).find("select#select-veg").val();
-      var selectedVeg= $(this).find("select#pick-veg").val();
-      var selectedMeatNum = $(this).find("select#select-meat").val();
-      var selectedMeat = $(this).find("select#pick-meat").val();
+    $("#pizzaSummary").show();
+
+    var selectedAmount= $(this).find("select#select-amount").val();
+    var selectedSize = $(this).find("select#select-size").val();
+    var selectedVegNum = $(this).find("select#select-veg").val();
+    var selectedVeg= $(this).find("select#pick-veg").val();
+    var selectedMeatNum = $(this).find("select#select-meat").val();
+    var selectedMeat = $(this).find("select#pick-meat").val();
+
     event.preventDefault();
+  });
 });
-
-});
-
-    // var newPizza = new Pizza(diameter, toppingVeg, toppingMeat);
-    // $(".new-address").each(function(){
-    //   var selectedSize = $(this).find("input.select-size").val();
-    //   var selectedVegNum = $(this).find("input.select-veg").val();
-    //   var selectedMeatNum = $(this).find("input.select-meat").val();
-    // });
-
-
-
-
-
-//newer stuff
-    // $("ul#pizza-order").append("<li><span class ='pizza'>" + newPizza.pizzaList() + "</span></li>");
-    //
-    // $(".pizza").last().click(function() {
-    //   $("#show-pizza-order").show();
-    //   $("#show-pizza-order h2").text(newPizza.pizzaList());
-    //
-    //   $(".final-size").text(newPizza.pizzaPrice);
-    //   $(".final-veggie").text(newPizza.pizzaPrice);
-    //   $(".final-meat").text(newPizza.pizzaPrice);
-    // });
-    // var selectedAmount= $("select#select-amount").val("");
-    // var selectedSize = $("select#select-size").val("");
-    // var selectedVegNum = $("select#select-veg").val("");
-    // var selectedVeg= $("select#pick-veg").val("");
-    // var selectedMeatNum = $("select#select-meat").val("");
-    // var selectedMeat = $("select#pick-meat").val("");
