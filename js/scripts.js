@@ -1,7 +1,8 @@
-function Pizza(diameter, toppingVeg, toppingMeat) {
+function Pizza(diameter, toppingVeg, toppingMeat, amountPizzas) {
   this.diameter = diameter;
   this.toppingVeg = toppingVeg;
   this.toppingMeat = toppingMeat;
+  this.amountPizzas = amountPizzas;
 }
 
 Pizza.prototype.pizzaList = function () {
@@ -41,6 +42,9 @@ Pizza.prototype.pizzaPrice = function () {
   return toppingMeatPrice;
 };
 
+  if(this.amountPizzas === "two-pizzas" || this.amountPizzas === "three-pizzas" || this.amountPizzas === "four-pizzas" || this.amountPizzas === "five-pizzas") {
+    alert("Are you sure? How about we start with one for now.");
+  }
 
 $(document).ready(function() {
 
@@ -61,6 +65,10 @@ $(document).ready(function() {
     $("span#final-meat-choice").text(selectedMeat);
 
     $("#pizzaSummary").show();
+
+
+    // $("span#final-price").text(finalPrice.pizzaPrice());
+    // $("#priceSummary").show();
 
     var selectedAmount= $(this).find("select#select-amount").val();
     var selectedSize = $(this).find("select#select-size").val();
