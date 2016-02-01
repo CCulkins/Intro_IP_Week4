@@ -43,10 +43,10 @@ Pizza.prototype.pizzaPrice = function () {
 
 
 $(document).ready(function() {
+
   // $("#create-button").click(function() {
   // });
   $("form#form").submit(function(event) {
-
 
     var selectedAmount= $("select#select-amount").val();
     var selectedSize = $("select#select-size").val();
@@ -54,7 +54,6 @@ $(document).ready(function() {
     var selectedVeg= $("select#pick-veg").val();
     var selectedMeatNum = $("select#select-meat").val();
     var selectedMeat = $("select#pick-meat").val();
-
 
     $("span#final-amount").text(selectedAmount);
     $("span#final-size").text(selectedSize);
