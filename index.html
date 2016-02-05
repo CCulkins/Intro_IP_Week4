@@ -19,91 +19,90 @@
       <form class="form-horizontal" id="form">
         <fieldset>
           <legend>Create your pizza here!</legend>
-<!-- Panel -->
+        <!-- Panel -->
           <div class="panel panel-danger">
             <div class="panel-heading">
               <h3 class="panel-title">Pricing info</h3>
+            </div>
+            <div class="panel-body">
+              Small pizza - (10") - $6 || Medium pizza - (12") - $7 || Large pizza - (12") - $8
+              <br>
+              Extra veggie topping $.50 || Extra meat topping $1 || First veggie and meat topping are free!
+            </div>
           </div>
-          <div class="panel-body">
-            Small pizza - (10") - $6 || Medium pizza - (12") - $7 || Large pizza - (12") - $8
-            <br>
-            Extra veggie topping $.50 || Extra meat topping $1 || First veggie and meat topping are free!
-          </div>
-          </div>
-<!-- End of Panel -->
+        <!-- End of Panel -->
           <div id ="form" class="col-lg-10">
             <div class="form-group">
               <label for="pickSize" class="col-lg-2 control-label">Pick the size of pizza</label>
               <div class="col-lg-10">
-                <select multiple="" class="form-control" id="pick-size" >
-                  <option value=" Small">Small - (10 inches)</option>
-                  <option value=" Medium">Medium - (12 inches)</option>
-                  <option value=" Large">Large - (14 inches)</option>
+                <select multiple="" class="form-control" id="pick-size">
+                  <option value="Small">Small - (10 inches)</option>
+                  <option value="Medium">Medium - (12 inches)</option>
+                  <option value="Large">Large - (14 inches)</option>
                 </select>
               </div>
             </div>
           </div>
-        <div class="col-lg-10">
-          <div class="form-group">
-            <label for="pickVeg" class="col-lg-2 control-label">Choose your veggie toppings</label>
-            <div class="col-lg-10">
-              <select multiple="" class="form-control" id="pick-veg">
-                <option value=" Pineapple">Pineapple</option>
-                <option value=" Olives">Olives</option>
-                <option value=" Peppers">Peppers</option>
-                <option value=" Onions">Onions</option>
-              </select>
-            </div>
-          </div>
 
-          <div class="form-group">
-            <label for="pickMeat" class="col-lg-2 control-label">Choose your meat toppings</label>
-            <div class="col-lg-10">
-              <select multiple="" class="form-control" id="pick-meat">
-                <option value=" Pepperoni">Pepperoni</option>
-                <option value=" Sausage">Sausage</option>
-                <option value=" Canadian-bacon">Canadian Bacon</option>
-                <option value=" Chicken">Chicken</option>
-              </select>
+          <div class="col-lg-10">
+            <div class="form-group">
+              <label for="pickVeg" class="col-lg-2 control-label">Choose your veggie toppings</label>
+              <div class="col-lg-10">
+                <select multiple="" class="form-control" id="pick-veg">
+                  <option value="Pineapple">Pineapple</option>
+                  <option value="Olives">Olives</option>
+                  <option value="Peppers">Peppers</option>
+                  <option value="Onions">Onions</option>
+                </select>
+              </div>
             </div>
-          </div>
 
-    <!-- Start of text box -->
-          <div class="form-group">
-            <label for="textArea" class="col-lg-2 control-label">Anything else?</label>
-            <div class="col-lg-10">
-              <textarea class="form-control" rows="3" id="textArea"></textarea>
+            <div class="form-group">
+              <label for="pickMeat" class="col-lg-2 control-label">Choose your meat toppings</label>
+              <div class="col-lg-10">
+                <select multiple="" class="form-control" id="pick-meat">
+                  <option value="Pepperoni">Pepperoni</option>
+                  <option value="Sausage">Sausage</option>
+                  <option value="Canadian-bacon">Canadian Bacon</option>
+                  <option value="Chicken">Chicken</option>
+                </select>
+              </div>
             </div>
-          </div>
-    <!-- End of text box -->
 
-          <div class="form-group">
-            <div class="col-lg-10 col-lg-offset-2">
-              <button type="reset" class="btn btn-default">Cancel</button>
-              <button type="submit" class="btn btn-danger" id="create-pizza">Submit</button>
+        <!-- Start of text box -->
+            <div class="form-group">
+              <label for="textArea" class="col-lg-2 control-label">Anything else?</label>
+              <div class="col-lg-10">
+                <textarea class="form-control" rows="3" id="textArea"></textarea>
+              </div>
             </div>
-          </div>
+        <!-- End of text box -->
+
+            <div class="form-group">
+              <div class="col-lg-10 col-lg-offset-2">
+                <button type="reset" class="btn btn-default">Cancel</button>
+                <button type="submit" class="btn btn-danger" id="create-pizza">Submit</button>
+              </div>
+            </div>
+
         </fieldset>
       </form>
-      </div>
+    </div>
 <!-- End of form -->
 
-      <div class="col-lg-10">
-        <div id="pizzaSummary">
-          <h2>Your order:</h2>
-
-          <p>Size: <span id="final-size"></span></p>
-          <p>Veggie toppings: <span id="final-veg-choice"></span></p>
-          <p>Meat toppings: <span id="final-meat-choice"></span></p>
-
-          <ul id="pizzaSummary">
-
-          </ul>
-        <div id="priceSummary">
-          <p>The final total of your order is: $<span class="totalPrice"></span> Thank you for order!</p>
-        </div>
-        </div>
+    <div class="col-lg-10">
+      <div id="pizzaSummary">
+        <h2>Your order:</h2>
+        <p>Size: <span id="final-size"></span></p>
+        <p>Veggie toppings: <span id="final-veg-choice"></span></p>
+        <p>Meat toppings: <span id="final-meat-choice"></span></p>
+        <ul id="pizzaSummary">
+        </ul>
+      <div id="priceSummary">
+        <p>The final total of your order is: $<span class="totalPrice"></span> Thank you for order!</p>
       </div>
+      </div>
+    </div>
     </div>
   </body>
 </html>
