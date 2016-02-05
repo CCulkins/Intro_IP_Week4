@@ -1,3 +1,7 @@
 #show-contact {
   display: none;
 }
+
+.jumbotron {
+  border: solid #F04124 2px;
+}
