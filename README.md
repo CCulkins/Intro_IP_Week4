@@ -15,7 +15,7 @@ _This website is designed to mimic a real pizza shop website. It allows users to
 
 ## Known Bugs
 
-_There are two known bugs. Neither the price information, or the pizza amount alert display._
+_The pizza amount alert does not display._
 
 ## Support and contact details
 _Anyone may contact me about this program using the information listed below._
